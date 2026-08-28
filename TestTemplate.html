@@ -13,15 +13,33 @@
             flex-direction:row;
             border: 4px solid white;
             border-radius: 25px;
+            background-color:rgb(56, 50, 83);
             
+        }
+        .outer {
+            background-image: url("dog-tongue-out.gif");
+            transform: scale(1.1);
+            margin:0px;
+            min-height: 100dvh
+        }
+        
+        .main {
+            display:flex;
+            
+            align-items:center;
+            width: 998px;
+            height:fit-content;
+            padding-left: 250px;
+            padding-right:300px;
         }
 
         .body{
-            background-color:black;
-            background-image: url("dog-tongue-out.gif");
-            margin:0px auto;
+            
+            
+            margin:0px;
             width: 1440px;
-            height: 100vh;
+            min-height:100vh;
+            
         }
 
         .header-inside {
@@ -35,7 +53,8 @@
         }
         .centre {
             width: 80%;
-            height:1060px;
+            min-height:1060px;
+
             display: flex;
             background-size: 50%;
             box-sizing: border-box;
@@ -47,7 +66,7 @@
         }
         .left {
             width: 20%;
-            height: 100%;
+            min-height:1060px;
             flex-direction: column;
             background-size:50%;
             background-color: #D4E5F5;
@@ -67,7 +86,7 @@
             
             margin: 0px auto;
             width: 998px;
-            height: 1015px;
+            min-height: 1060px;
             border-bottom: 4px solid #FFF;
             border-left: 4px solid #FFF;
             border-right: 4px solid #FFF;
@@ -78,6 +97,8 @@
             background-color:white;
         }
     </style>
+    <div class="outer">
+    <div class="main">
     <div class="body">
         <div class="header">
             <div class="header-inside">
@@ -98,5 +119,7 @@
                 <img align="bottom" src="wistfuldog.jpg" height="400px">
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </html>
