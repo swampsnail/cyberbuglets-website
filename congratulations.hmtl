@@ -22,13 +22,16 @@ img {
 <img src="angelicbuglet_surprise.png">
 </div>
 
+
 <script>
     setTimeout(()=>{
-        const sometext=document.getElementById('whitebuglet')
-        sometext.style.display='none';
+        const boog=document.getElementById('whitebuglet')
+        boog.style.display='none';
     },3000);
 
 </script>
 
+ <meta http-equiv="refresh" content="5; url=https://cyberbuglets.net" />
+ 
 </body>
 </html>
