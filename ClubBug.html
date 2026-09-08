@@ -1,0 +1,406 @@
+<html>
+    
+    <head>
+        <title>Buglets Cafe</title>
+    </head>
+    <script>
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+    </script>
+    <style>
+        .header {
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box;
+            display:flex;
+            align-items:center;
+            padding: 20px;
+            flex-direction:row;
+            border: 4px solid white;
+            border-radius: 25px;
+            background-color:rgb(56, 50, 83);
+            
+        }
+        .outer {
+           
+            margin: 0px 0px 0px 0px;
+            padding-left:20%;
+            padding-right:10%;
+            min-height: 100dvh;
+            
+            
+        } 
+        
+        
+
+        html{
+            padding:0px;
+            margin:0px;
+        }
+
+        body{
+            
+            
+            margin: 0px;
+            padding: 0%;
+            width: 1440px;
+            min-height:100vh;
+            background-color:blue;
+            
+        }
+
+        .header-inside {
+            border-radius: 25px;
+            display:flex;
+            flex-direction:row;
+            box-sizing:border-box;
+            background-color: #D4E5F5;
+            align-items: center;
+
+        }
+       
+        .centre {
+            width: 60%;
+            min-height:1060px;
+            
+            display: column;
+            background-size: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 4px solid #D4E5F5;
+            background-color: rgb(202, 255, 237);
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .left {
+            width: 20%;
+            min-height:1060px;
+            flex-direction: column;
+            background-size:50%;
+            background-color: #D4E5F5;
+            border-radius: 25px;
+            border: 4px solid white;
+            padding:20px;
+            align-items: center;
+            flex:1;
+        }
+        .right {
+            width: 20%;
+            min-height:1060px;
+            flex-direction: column;
+            background-size:50%;
+            background-color: #D4E5F5;
+            border-radius: 25px;
+            border: 4px solid white;
+            padding:20px;
+            align-items: center;
+        }
+        .float-text {
+            color:aquamarine;
+            font-family: 'vipnagorgialla';
+            font-size: 200%;
+            margin-top: 60px;
+            margin-left: 50px;
+            position: absolute;
+        }
+        .wrapper {
+            
+            margin: 0px auto;
+            width: 998px;
+            min-height: 1060px;
+            border-bottom: 4px solid #FFF;
+            border-left: 4px solid #FFF;
+            border-right: 4px solid #FFF;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            background-color:white;
+        }
+        .content {
+            padding: 20px;
+            
+            margin:0;
+            align-items: center;
+            box-sizing: border-box;
+            border:0px;
+            display:flex;
+            flex-direction: row;
+            
+            
+        }
+        #forumuser {
+            
+            flex-direction: column;
+            box-sizing: border-box;
+            border: 5px solid white;
+            display:flex;
+            height: 300px;
+            width: 30%;
+            padding: 10px;
+            align-items: center;
+            background-image: linear-gradient(to bottom,rgb(87, 199, 255),rgb(173, 236, 255));
+           
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            margin:0px;
+            
+            
+        }
+
+        #forumicon img {
+            box-sizing: border-box;
+            border: 5px solid white;
+            border-radius:50%;
+            width: 60px;
+            height:60px;
+            background-color: white;
+        }
+        #forumname{
+            font-family: vipnagorgialla;
+            font-weight: bold, italic;
+            font-size: 12px;
+        }
+        .forumpost {
+            flex-direction: row;
+            box-sizing: border-box;
+            border: 5px solid white;
+            display:inline-block;
+            height: 300px;
+            width: 70%;
+            padding: 10px;
+            background-image: linear-gradient(to bottom,white,rgb(237, 239, 252));
+            margin:0px;
+            border-left: 0px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+       
+        #linkbutton {
+            
+            font-family: vipnagorgialla;
+            font-weight: bold, italic;
+            font-size: 12px;
+            color:blue;
+            box-sizing: border-box;
+            background:-moz-linear-gradient(to bottom,white,rgb(237, 239, 252));
+            border: 4px solid white;
+            border-radius:50%;
+            display: inline-flex;
+            justify-content: center; /* Centers text horizontally */
+            align-items: center;
+            padding: 5px;
+            height: 50px;
+            width:100px;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+
+    </style>
+    
+    
+        <body>
+            <div class="outer">
+            <div class="header">
+                <div class="header-inside">
+                    <div class="float-text">
+                        Buglets Cafe
+                    </div>
+                    <img height="50px" style="display:flex; align-content: end;" src="Temporary_Cafelogo.png">
+                </div>
+            </div>
+            <div class="wrapper">
+                
+                <div class="left">
+                    <div id="linkbutton"><a href="Homepage.html">home</a></div>
+                    <div id="linkbutton">login</div>
+                    <div id="linkbutton">forum</div>
+                    <div id="linkbutton">craft</div>
+                    <div id="linkbutton">music</div>
+                </div>
+
+                <div class="centre">
+                    <div class ="content">
+                        <img src="banner_ad.gif">
+                    </div>
+
+                    <div class="content">
+                        Browse our kid-friendly forums!
+                    </div>
+                    <p style="text-align: center;"><span style="color:blue;"><u>50</u></span> <span style="color:grey;"><u>49</u> <u>48</u> <u>47</u> <u>...</u></span></p>
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="dog-tongue-out.gif">
+                            </div>
+                            <p id="forumname">bugotron300</p>
+                            <p><i>yep... im kinda an expert here</i></p>
+                            <p>member since: 2004</p>
+                            
+                        </div>
+                        <div class="forumpost">
+                            <p><i>posted 18/09/2006</i></p>
+                            <p>Hey guys. whats up</p>
+                        </div>
+                    </div>
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="PinkBuglet.png" height="40px" width="40px">
+                            </div>
+                            
+                            <p id="forumname">pinkbug</p>
+                            <p><i>im so pink</i></p>
+                            <p>member since: 2005</p>
+                            
+                            
+                        </div>
+                        
+                        <div class="forumpost">
+
+                            <p><i>posted 18/09/2006</i></p>
+                            
+                            <p>feelin bugly</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="Yellow Buglet.png" height="40px" width="40px">
+                            </div>
+                            
+                            <p id="forumname">Daisy890</p>
+                            <p><i>favourite world: fishworld</i></p>
+                            <p>member since: 2004</p>
+                            
+                            
+                        </div>
+                        
+                        <div class="forumpost">
+
+                            <p><i>posted 18/09/2006</i></p>
+                            
+                            <p>whats everyones fav animals :3 can u guess mine?? owo </p>
+                            
+                        </div>
+                    </div>
+
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="dog-tongue-out.gif">
+                            </div>
+                            <p id="forumname">bugotron300</p>
+                            <p><i>yep... im kinda an expert here</i></p>
+                            <p>member since: 2004</p>
+                            
+                        </div>
+                        <div class="forumpost">
+                            <p><i>posted 18/09/2006</i></p>
+                            <p>I hate cats. dogs are far superior animals with a high intellect. for example: can learn tricks such as sit, roll over. My mums cat rolls over but not because i tell it too but because its LAZY!!!</p>
+                        </div>
+                    </div>
+
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="Yellow Buglet.png" height="40px" width="40px">
+                            </div>
+                            
+                            <p id="forumname">Daisy890</p>
+                            <p><i>favourite world: fishworld</i></p>
+                            <p>member since: 2004</p>
+                            
+                            
+                        </div>
+                        
+                        <div class="forumpost">
+
+                            <p><i>posted 18/09/2006</i></p>
+                            
+                            <p>dont be mean :( </p>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="photomissing.png" height="40px" width="40px">
+                            </div>
+                            
+                            <p id="forumname"><i>User Hidden</i></p>
+                            <p><i>-</i></p>
+                            <p>member since: 2025</p>
+                            
+                            
+                        </div>
+                        
+                        <div class="forumpost">
+
+                            <p><i>posted 02/04/2025</i></p>
+                            
+                            <p style="color:red;"><i>This post has been cleaned up by the digital fairies. Remember to be kind and considerate online!</i></p>
+                            
+                        </div>
+                    </div>
+
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="photomissing.png" height="40px" width="40px">
+                            </div>
+                            
+                            <p id="forumname"><i>User Hidden</i></p>
+                            <p><i>-</i></p>
+                            <p>member since: 2026</p>
+                            
+                            
+                        </div>
+                        
+                        <div class="forumpost">
+
+                            <p><i>posted 09/10/2026</i></p>
+                            
+                            <p style="color:red;"><i>This post has been cleaned up by the digital fairies. Remember to be kind and considerate online!</i></p>
+                            
+                        </div>
+                    </div>
+
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="brokenimage.png" height="40px" width="40px">
+                            </div>
+                            
+                            <p id="forumname">ERRRRRRRRR</p>
+                            <p><i>user bio</i></p>
+                            <p>member since: 999999999999</p>
+                            
+                            
+                        </div>
+                        
+                        <div class="forumpost">
+
+                            <p><i>posted</i></p><p id="date"></p>
+                            This place is not meant for you. Turn back.
+                            <p></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    News!
+                </div>
+            </div>
+            </div>
+        </body>
+    
+    
+</html>
