@@ -2,14 +2,34 @@
     
     <head>
         <title>Login Portal</title>
-    </head>
-    <script>
-        n =  new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        d = n.getDate();
-        document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+        
+
+        <script>
+    
+            //Following function gets values of the username and password fields and checks to see if they match a hard coded username and password 
+            function authenticate(){
+                var authorised;
+                
+                //get input values
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                
+                //check to see if the password and username match
+                if(username == "ADMIN7" && password == "BUBBLE04"){
+                authorised = true;
+                
+                }else{ // username or password do not match
+                authorised = false;
+                //alert user
+                alert("Username and Password Invalid! Try Again.");
+                }
+                //return result
+                return authorised;
+            }
+        </script>
     </script>
+    </head>
+   
     <style>
         .header {
             width: 100%;
@@ -229,6 +249,31 @@
 
                     <div class="content">
                         Log on to Cyber Buglets!
+                    </div>
+
+                    <div>
+                        
+
+                        <form action="congratulations.html" onsubmit="return authenticate()">
+                            <label for="username">Username</label>
+                            <!-- added IDs to the inputs -->
+                            <input
+                                id="username"
+                                type="text"
+                                placeholder="my username"
+                                name="username"
+                                required
+                            />
+                            <label for="password">Password</label>
+                            <input
+                                id="password"
+                                type="password"
+                                placeholder="my password"
+                                name="password"
+                                required
+                            />
+                            <button type="submit">Submit</button>
+                        </form>
                     </div>
                     
                 </div>
