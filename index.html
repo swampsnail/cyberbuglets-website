@@ -43,7 +43,7 @@
             display:flex;
             justify-content: center;
             
-            
+            position:relative;
             max-width: 30vw;
             height:fit-content;
             margin-left: auto; 
@@ -88,6 +88,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            
             margin:0;
         }
         
@@ -139,13 +140,32 @@
             animation-duration: 3s;
             }
             
+            #float-container {
             
+            position: absolute; /* Enables positioning the image */
+            bottom: 5px; /* Adjusts the vertical position */
+            left: 20px; /* Adjusts the horizontal position */
+            
+            margin: 0; /* Resets any default margin */
+
+            
+            }
+            #float-image{
+                max-width: 40%;
+                height: auto;
+            }
+
         </style>
 
     
     <div id="logo-font"><img src="4K_title_re_render.png" height="150"></div>
     
-    
+    <div id="float-container">
+        
+        <a href="Homepage.html"><img id="float-image" src="AngelicGate.gif"></a>
+        <p style="font-family: vipnagorgialla; font-size: 50; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><b>Unlock the past . . .</b></p>
+        
+    </div>
     <div id="wrapper">
         <div  style="font-family:Vipnagorgialla; text-align:center; color:white; animation-name: IntroAnimation;
             animation-duration: 3s;">
@@ -176,6 +196,7 @@
             </div>
         </div>
     </div>
+    
     </body>
     
     <style>
