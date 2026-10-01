@@ -12,38 +12,85 @@
         a:link {
         background-color: transparent;
         text-decoration: none;
-        color: #000000;
+        color: #FFFF;
         }
+        a:visited {
+        color: #FFFF;
+        }
+
+        @keyframes IntroAnimation {
+        from {opacity: 0;}
+        to {opacity: 1.0;}
+        
+         }
+        @keyframes LogoAnimation {
+        from {opacity: 0;}
+        to {opacity: 1.0;}
+        
+         }
         .body-text {
             font-family: Vipnagorgialla;
             font-size: medium;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 10%;
+            padding: 5%;
             width:auto;
+            margin:0;
             
             }
         #wrapper {
-            display:block;
+            display:flex;
+            justify-content: center;
             
-            width: 570px;
-            margin: 0 auto;
-            padding: 5%;
+            
+            max-width: 30vw;
+            height:fit-content;
+            margin-left: auto; 
+            margin-right: 100px;
+            padding: 2%;
           
-            border: 20px solid transparent;
-            border-radius: 30px;
-            background:linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box, linear-gradient(rgb(112, 124, 144), rgb(60, 66, 81), rgb(112, 124, 144)) border-box;
+            border-radius: 25px;
+            
+            background:linear-gradient(rgba(100, 100, 100, 0.1), rgba(27, 27, 27, 0.1)); 
+            background-blend-mode: multiply;
             
             }
 
         .general-page {
-            background-image: linear-gradient(rgb(176, 186, 214), rgb(109, 123, 145));
+            box-sizing: flex;
+            flex-direction: flex-end;
+            align-items:end;
+            
+            background-image: url("keyart_websiteedition.png");
             width: 100vw;
 			height: 100vh;
-			background-size: cover;
-			background-position: center, center;
+			background-size:cover;
+			background-position: right, center;
+            background-attachment: fixed;
+            margin:0;
             }
+
+        #content-column {
+            animation-name: IntroAnimation;
+            animation-duration: 3s;
+            box-sizing: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            margin:0;
+        }
+        #content-row {
+            animation-name: IntroAnimation;
+            animation-duration: 3s;
+            box-sizing: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin:0;
+        }
+        
 
             .chromatic-text {
             font-size: 1.3em; /* Adjust as needed */
@@ -81,29 +128,71 @@
             }
             }
 
-            .logo-font {
-            font-family: Vipnagorgialla; size: 20px; text-align: center; margin:50px; background-image: linear-gradient(black, rgb(43, 46, 81)); color: transparent; background-clip: text;
-            
+            #logo-font {
+            display:flex;
+            box-sizing: border-box;
+            margin:0;
+            flex-direction: row;
+            justify-content: end;
+            padding-right:5%;
+            animation-name: LogoAnimation;
+            animation-duration: 3s;
             }
+            
+            
         </style>
-    <h1 class="logo-font"><i>Where are my <span class="chromatic-text" style="font-size:34px;"><a href="friends.html">friends?</a></span></i></h1>
+
+    
+    <div id="logo-font"><img src="4K_title_re_render.png" height="150"></div>
+    
     
     <div id="wrapper">
-        <div style="font-family:Vipnagorgialla; text-align:center;">
-            <img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif">
-        <p ><i>We used to have so much fun together.</i></p>
-        <p ><i>I have a feeling they'll be back <span class="chromatic-text" style="font-size: medium"><a href="https://www.instagram.com/cyberbuglets/">soon.</a></span></i> </p>
-        <img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif"><img src="https://blob.gifcities.org/gifcities/C2SE3ALSUPKUOVY2U4BWWNJJY6WYAYSD.gif">
-        </div>
-        <div style="float:right;">
-            <img src="Blue_Buglet_PromoRender.png" height="150px;">
+        <div  style="font-family:Vipnagorgialla; text-align:center; color:white; animation-name: IntroAnimation;
+            animation-duration: 3s;">
+         <p style="font-size:20px">explore a Y2K dead mmo frozen in its last moments</p>
+         <br>
+         <br>
+            <div id="content-column" style="font-family:Vipnagorgialla; text-align:center; color:white;">
+                <a href="https://store.steampowered.com/app/4732790/Cyber_Buglets/"><img src="Steam_icon_logo.svg.webp" height="60px"></a>
+            </div>
+            <div id="content-column" style="font-family:Vipnagorgialla; text-align:center; color:white;">
+                <a href="https://store.steampowered.com/app/4732790/Cyber_Buglets/"><b>wishlist</b> us on steam!</a>
+            </div>
+            <br>
+            <br>
+            <div id="content-column" style="font-family:Vipnagorgialla; text-align:center; color:white; padding:10px">
+                <a href="https://drive.google.com/drive/folders/1DFDf7km0dBN_DUeWfgidCQb7GMA9iGmJ?usp=drive_link"><img src="buglet_head0000.png" height="100px"></a>
+            </div>
+            <div id="content-column" style="font-family:Vipnagorgialla; text-align:center; color:white;">
+                view our press kit!
+                
+            </div>
+            <br>
+            <br>
+            <div id="content-row" style="font-family:Vipnagorgialla; text-align:center; color:white; padding:10px">
+                <a href="https://www.instagram.com/cyberbuglets"><img src="Instagram_logo_2016.svg.webp" height="60px"></a>
+                <a href="https://bsky.app/profile/cyberbuglets.bsky.social"><img src="Bluesky_Logo.svg.webp" height="60px"></a>
+                
+            </div>
         </div>
     </div>
     </body>
-    <footer>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-    </footer>
-
+    
+    <style>
+        @media (max-width:320px)  { 
+                #wrapper {
+                    
+            
+                    margin-left:auto;
+                    margin-right:10px;
+                    min-width: 50vw;
+                    
+            
+                }
+                
+                /* smartphones, iPhone, portrait 480x320 phones */ 
+            }
+    </style>
 </html>
 
 
