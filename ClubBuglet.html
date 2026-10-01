@@ -3,13 +3,7 @@
     <head>
         <title>Club Buglet</title>
     </head>
-    <script>
-        n =  new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        d = n.getDate();
-        document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
-    </script>
+    
     <style>
         .header {
             width: 100%;
@@ -227,11 +221,26 @@
                         <img src="banner_ad.gif">
                     </div>
 
-                    <div class="content">
+                    <div class="content" style="font-size: 20;">
                         Listen to Buglet Sounds!
                     </div>
 
-                    
+                    <div>
+                        <audio controls>
+                            <source src="BugletsOverworld.wav" type="audio/wav">
+                            
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <audio controls>
+                            <source src="BugletOpening-v1.wav" type="audio/wav">
+                            
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                     
                 </div>
                 <div class="right">
