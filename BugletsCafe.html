@@ -2,16 +2,24 @@
     
     <head>
         <title>Buglets Cafe</title>
+        <script>
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+        </script>
     </head>
-    <script>
-        n =  new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        d = n.getDate();
-        document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
-    </script>
+    
     <style>
+        
+        * {
+            font-family: vipnagorgialla;
+            
+        }
         .header {
+            margin-top: 2px;
+            margin-bottom: 2px;
             width: 100%;
             height: 200px;
             box-sizing: border-box;
@@ -19,9 +27,17 @@
             align-items:center;
             padding: 20px;
             flex-direction:row;
-            border: 4px solid white;
+            border: 2px solid white;
             border-radius: 25px;
-            background-color:rgb(56, 50, 83);
+            box-shadow: 0px 10px 20px #FFFF;
+            
+            background-image: url(gradient_background_01.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 100% 100%;
+            
+            
+            
             
         }
         .outer {
@@ -48,7 +64,8 @@
             padding: 0%;
             width: 1440px;
             min-height:100vh;
-            background-color:blue;
+            background-image: url('sky_backdrop.png');
+            background-attachment: fixed;
             
         }
 
@@ -67,22 +84,33 @@
             min-height:1060px;
             
             display: column;
-            background-size: 50%;
+            
             box-sizing: border-box;
             padding: 20px;
-            border: 4px solid #D4E5F5;
-            background-color: rgb(202, 255, 237);
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
+            border: 2px solid white;
+            border-radius: 25px;
+            box-shadow: 5px 10px 20px #FFFF;
+            
+            background-image: url(gradient_background_02.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 40% 100%;
+            background-attachment: fixed;
+            
         }
         .left {
             width: 20%;
             min-height:1060px;
             flex-direction: column;
-            background-size:50%;
-            background-color: #D4E5F5;
+            border: 2px solid white;
             border-radius: 25px;
-            border: 4px solid white;
+            box-shadow: 0px 10px 20px #FFFF;
+            
+            background-image: url(gradient_background_01.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 40% 100%;
+            background-attachment: fixed;
             padding:20px;
             align-items: center;
             flex:1;
@@ -91,15 +119,20 @@
             width: 20%;
             min-height:1060px;
             flex-direction: column;
-            background-size:50%;
-            background-color: #D4E5F5;
+            border: 2px solid white;
             border-radius: 25px;
-            border: 4px solid white;
+            box-shadow: 5px 10px 20px #FFFF;
+            
+            background-image: url(gradient_background_01.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 40% 100%;
+            background-attachment: fixed;
             padding:20px;
             align-items: center;
         }
         .float-text {
-            color:aquamarine;
+            color:rgb(37, 37, 40);
             font-family: 'vipnagorgialla';
             font-size: 200%;
             margin-top: 60px;
@@ -147,7 +180,7 @@
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
             margin:0px;
-            
+            box-shadow: 5px 5px 5px #FFFF;
             
         }
 
@@ -158,6 +191,7 @@
             width: 60px;
             height:60px;
             background-color: white;
+            box-shadow: 5px 5px 5px #FFFF;
         }
         #forumname{
             font-family: vipnagorgialla;
@@ -177,6 +211,7 @@
             border-left: 0px;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+            box-shadow: 5px 5px 5px #FFFF;
         }
        
         #linkbutton {
@@ -234,7 +269,7 @@
                     <div class ="content">
                         <div id="forumuser">
                             <div id="forumicon">
-                                <img src="dog-tongue-out.gif">
+                                <img src="Purple_Buglet.png">
                             </div>
                             <p id="forumname">bugotron300</p>
                             <p><i>yep... im kinda an expert here</i></p>
@@ -274,7 +309,7 @@
                                 <img src="Yellow Buglet.png" height="40px" width="40px">
                             </div>
                             
-                            <p id="forumname">Daisy890</p>
+                            <p id="forumname">Jessicat95</p>
                             <p><i>favourite world: fishworld</i></p>
                             <p>member since: 2004</p>
                             
@@ -293,7 +328,7 @@
                     <div class ="content">
                         <div id="forumuser">
                             <div id="forumicon">
-                                <img src="dog-tongue-out.gif">
+                                <img src="Purple_Buglet.png">
                             </div>
                             <p id="forumname">bugotron300</p>
                             <p><i>yep... im kinda an expert here</i></p>
@@ -312,7 +347,7 @@
                                 <img src="Yellow Buglet.png" height="40px" width="40px">
                             </div>
                             
-                            <p id="forumname">Daisy890</p>
+                            <p id="forumname">Jessicat95</p>
                             <p><i>favourite world: fishworld</i></p>
                             <p>member since: 2004</p>
                             
@@ -324,9 +359,27 @@
                             <p><i>posted 18/09/2006</i></p>
                             
                             <p>dont be mean :( </p>
+                            <p>my mum works for buglets and can get you BANNED for bad behaviour!!1! >:/ </p>
                             
                         </div>
 
+                    </div>
+
+                    <div class ="content">
+                        <div id="forumuser">
+                            <div id="forumicon">
+                                <img src="Purple_Buglet.png">
+                            </div>
+                            <p id="forumname">bugotron300</p>
+                            <p><i>yep... im kinda an expert here</i></p>
+                            <p>member since: 2004</p>
+                            
+                        </div>
+                        <div class="forumpost">
+                            <p><i>posted 18/09/2006</i></p>
+                            <p>Yeah right... and my uncle works at FunCube</p>
+                            <p>dork</p>
+                        </div>
                     </div>
 
                     <div class ="content">
@@ -396,7 +449,20 @@
                     </div>
                 </div>
                 <div class="right">
-                    News!
+                    <p class="content"style="font-size:20px;">News!</p>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Thanks for all the memories!</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Buglets Winter Catalogue 2006 - Ice to Meet You!</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Top 10 Bubbles of the Month</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">How to Protect Your Account from Scammers</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Older . . .</p></a>
                 </div>
             </div>
             </div>
