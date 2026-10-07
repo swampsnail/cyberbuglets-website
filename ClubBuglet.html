@@ -1,0 +1,261 @@
+<html>
+    
+    <head>
+        <title>Club Buglet</title>
+    </head>
+    
+    <style>
+        * {
+            font-family: vipnagorgialla;
+        }
+        .header {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box;
+            display:flex;
+            align-items:center;
+            padding: 20px;
+            flex-direction:row;
+            border: 2px solid white;
+            border-radius: 25px;
+            box-shadow: 0px 10px 20px #FFFF;
+            
+            background-image: url(gradient_background_01.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 100% 100%;
+            
+            
+            
+            
+        }
+        .outer {
+           
+            margin: 0px 0px 0px 0px;
+            padding-left:20%;
+            padding-right:10%;
+            min-height: 100dvh;
+            
+            
+        } 
+        
+        
+
+        html{
+            padding:0px;
+            margin:0px;
+        }
+
+        body{
+            
+            
+            margin: 0px;
+            padding: 0%;
+            width: 1440px;
+            min-height:100vh;
+            background-image: url('sky_backdrop.png');
+            background-attachment: fixed;
+            
+        }
+
+        .header-inside {
+            border-radius: 25px;
+            display:flex;
+            flex-direction:row;
+            box-sizing:border-box;
+            background-color: #D4E5F5;
+            align-items: center;
+
+        }
+       
+        .centre {
+            width: 60%;
+            min-height:1060px;
+            
+            display: column;
+
+            
+           box-sizing: border-box;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 25px;
+            box-shadow: 5px 10px 20px #FFFF; 
+
+            background-image: url(gradient_background_02.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 40% 100%;
+            background-attachment: fixed;
+            align-items: center;
+            
+            margin: 0;
+        }
+        .left {
+            width: 20%;
+            min-height:1060px;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius: 25px;
+            box-shadow: 0px 10px 20px #FFFF;
+            
+            background-image: url(gradient_background_01.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 40% 100%;
+            background-attachment: fixed;
+            padding:20px;
+            align-items: center;
+            flex:1;
+        }
+        .right {
+            width: 20%;
+            min-height:1060px;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius: 25px;
+            box-shadow: 5px 10px 20px #FFFF;
+            
+            background-image: url(gradient_background_01.png);
+            background-color: rgba(255, 250, 250, 0.045);
+            background-blend-mode: darken;
+            background-size: 40% 100%;
+            background-attachment: fixed;
+            padding:20px;
+            align-items: center;
+        }
+        .float-text {
+            color:rgb(37, 37, 40);
+            font-family: 'vipnagorgialla';
+            font-size: 200%;
+            margin-top: 88px;
+            margin-left: 80px;
+            position: absolute;
+        }
+        .wrapper {
+            
+            margin: 0px auto;
+            width: 998px;
+            min-height: 1060px;
+            border-bottom: 4px solid #FFF;
+            border-left: 4px solid #FFF;
+            border-right: 4px solid #FFF;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            background-color:white;
+            
+        }
+        .content {
+            padding: 20px;
+            text-align:center;
+            margin:auto;
+            align-items: center;
+            
+            box-sizing: border-box;
+            border:0px;
+            display:block;
+            
+            
+        }
+
+        
+            
+       
+       
+       
+        #linkbutton {
+            
+            font-family: vipnagorgialla;
+            font-weight: bold, italic;
+            font-size: 10px;
+            color:blue;
+            box-sizing: border-box;
+            background:-moz-linear-gradient(to bottom,white,rgb(237, 239, 252));
+            border: 4px solid white;
+            border-radius:50%;
+            display: inline-flex;
+            justify-content: center; /* Centers text horizontally */
+            align-items: center;
+            padding: 5px;
+            height: 50px;
+            width:100px;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+
+
+    </style>
+    
+    
+        <body>
+            <div class="outer">
+            <div class="header">
+                <div class="header-inside">
+                    <div class="float-text">
+                        Club Buglet
+                    </div>
+                    <img height="50px" style="display:flex; align-content: end;" src="Temporary_ClubBugletLogo.png">
+                </div>
+            </div>
+            <div class="wrapper">
+                
+                <div class="left">
+                    <div id="linkbutton"><a href="Homepage.html">home</a></div>
+                    <div id="linkbutton"><a href="LoginPortal.html">login portal</a></div>
+                    <div id="linkbutton"><a href="BugletsCafe.html">buglets cafe</a></div>
+                    <div id="linkbutton">craftwurld</div>
+                    <div id="linkbutton"><a href="ClubBuglet.html">club buglet</a></div>
+                </div>
+
+                <div class="centre">
+                    <div class ="content">
+                        <img src="banner_ad.gif">
+                    </div>
+
+                    <div class="content" style="font-size: 20;">
+                        Listen to Buglet Sounds!
+                    </div>
+
+                    <div>
+                        <audio controls>
+                            <source src="BugletsOverworld.wav" type="audio/wav">
+                            
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <audio controls>
+                            <source src="BugletOpening-v1.wav" type="audio/wav">
+                            
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    
+                </div>
+                <div class="right">
+                    <p class="content"style="font-size:20px;">News!</p>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Thanks for all the memories!</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Buglets Winter Catalogue 2006 - Ice to Meet You!</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Top 10 Bubbles of the Month</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">How to Protect Your Account from Scammers</p></a>
+                    <br>
+                    <br>
+                    <a href="Webpage Missing.html"style="font-size:12px;"><p class="content">Older . . .</p></a>
+                </div>
+            </div>
+            </div>
+        </body>
+    
+    
+</html>
